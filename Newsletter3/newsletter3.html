@@ -38,7 +38,9 @@
         padding: 0 !important;
       }
 
-      table[class=body] #container {
+      table[class=body] #card {
+        padding: 0;
+        width: 100%;
       }
 
       table[class=body] .main {
@@ -131,6 +133,27 @@
       width: 100%; margin-bottom: 10px;
     }
 
+    #card {
+      font-family: sans-serif; 
+      font-size: 14px; 
+      display: block; 
+      margin: 0 auto; 
+      max-width: 580px; 
+      width: 580px; 
+      border-style: solid;
+      border-left-width: thin;
+      border-top-width: thin;
+      border-radius: 20px; 
+      border-color: lightgray;
+      background-color: white;
+    }
+
+    #container {
+      border-collapse: separate; 
+      width: 100%; 
+      margin-bottom: 10px;
+    }
+
   </style>
 </head>
 
@@ -147,26 +170,9 @@
 
   <!-- LOGO CARD -->
 
-  <table border="0" cellpadding="0" cellspacing="0" class="body" style="border-collapse: separate; 
-  width: 100%; 
-  margin-bottom: 10px;">
+  <table id="container" border="0" cellpadding="0" cellspacing="0" class="body">
     <tr>
-      <td style="font-family: sans-serif; 
-      font-size: 14px; 
-      vertical-align: top;"></td>
-
-      <td class="container" style="font-family: sans-serif; 
-        font-size: 14px; 
-        display: block; 
-        margin: 0 auto; 
-        max-width: 580px; 
-        width: 580px; 
-        border-style: solid;
-        border-left-width: thin;
-        border-top-width: thin;
-        border-radius: 20px; 
-        border-color: lightgray;
-        background-color: white;">
+      <td id="card">
         <div class="content" style="box-sizing: border-box; 
           text-align: center;
           display: block; 
@@ -283,7 +289,7 @@
           font-size: 14px; 
           vertical-align: top;"></td>
 
-      <td class="container" style="font-family: sans-serif; 
+      <td class="card" style="font-family: sans-serif; 
             font-size: 14px; 
             display: block; 
             margin: 0 auto; 
@@ -384,6 +390,10 @@
         </div>
       </td>
     </tr>
+  </table>
+
+  <table>
+
   </table>
 
 </body>
