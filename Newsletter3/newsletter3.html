@@ -34,7 +34,7 @@
         padding: 10px !important;
       }
 
-      table[class=body] .content {
+      table[class=body] #content {
         padding: 0 !important;
       }
 
@@ -155,6 +155,17 @@
       background-color: transparent;
     }
 
+    #content {
+      box-sizing: border-box; 
+      display: block; 
+      margin: 0 auto; 
+      max-width: 580px;
+    }
+
+    #card.intro-card {
+      text-align: center;
+    }
+
   </style>
 </head>
 
@@ -173,12 +184,8 @@
 
   <table id="container" border="0" cellpadding="0" cellspacing="0" class="body">
     <tr>
-      <td id="card">
-        <div class="content" style="box-sizing: border-box; 
-          text-align: center;
-          display: block; 
-          margin: 0 auto; 
-          max-width: 580px;">
+      <td id="card" class="intro-card">
+        <div id="content">
 
           <!-- START CENTERED WHITE CONTAINER -->
 
@@ -282,15 +289,8 @@
 
   <table id="container" border="0" cellpadding="0" cellspacing="0" class="body">
     <tr>
-      <td style="font-family: sans-serif; 
-          font-size: 14px; 
-          vertical-align: top;"></td>
-
       <td id="card">
-        <div class="content" style="box-sizing: border-box; 
-              display: block; 
-              margin: 0 auto; 
-              max-width: 580px;">
+        <div id="content">
 
           <!-- START CENTERED WHITE CONTAINER -->
 
@@ -382,7 +382,9 @@
   <table id="container" border="0" cellpadding="0" cellspacing="0" class="body">
     <tr>
       <td id="card">
-
+        <p id="card-body">
+          
+        </p>
       </td>
     </tr>
   </table>
